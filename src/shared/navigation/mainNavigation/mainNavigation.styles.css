@@ -14,9 +14,19 @@
   border-bottom: 1px solid black;
   margin-top: -14px;
 }
+
+.main_navigation_drawer_nav {
+  display: hidden;
+}
 @media screen and (max-width: 813px) {
   .main_nav_menu_button {
     display: flex;
+  }
+  .main_navigation_header_nav {
+    display: none;
+  }
+  h1 {
+    margin-right: 20px;
   }
 }
 h1 {
