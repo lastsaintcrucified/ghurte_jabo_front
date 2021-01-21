@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Avatar from "../../../shared/component/avatar.component.jsx";
+import Avatar from "../../../shared/uiElements/avatar.component.jsx";
 import "./userItem.styles.css";
 
 const UserItem = (props) =>{

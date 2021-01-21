@@ -15,9 +15,6 @@
   margin-top: -14px;
 }
 
-.main_navigation_drawer_nav {
-  display: hidden;
-}
 @media screen and (max-width: 813px) {
   .main_nav_menu_button {
     display: flex;
