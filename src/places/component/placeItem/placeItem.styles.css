@@ -1,0 +1,45 @@
+.place_item {
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  margin-top: -20px;
+}
+.place_item_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.place_item_info h3,
+h2,
+p {
+  margin-top: -10px;
+  font-family: monospace;
+}
+.place_image {
+  padding: 0px;
+}
+.place_image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+}
+.place_item_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-top: 1px solid #dfdee0;
+}
+.edit {
+  background-color: greenyellow;
+  border: none;
+  color: white;
+}
+.delete {
+  background-color: red;
+  border: none;
+}
