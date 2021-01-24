@@ -8,13 +8,14 @@
   margin-left: 10px;
 }
 .user_item:hover h2 {
-  color: black;
+  color: white;
 }
 .user_item:hover p {
-  color: black;
+  color: white;
 }
 .user_item:hover {
-  background-color: gold;
+  background-color: #118980;
+  transition: all 200ms;
 }
 a {
   display: flex;

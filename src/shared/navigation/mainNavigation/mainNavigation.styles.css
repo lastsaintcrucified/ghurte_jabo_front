@@ -30,3 +30,6 @@ h1 {
   margin-left: 20px;
   font-family: monospace;
 }
+.main_nav_title:hover a {
+  color: #118980;
+}

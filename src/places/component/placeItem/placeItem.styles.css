@@ -43,3 +43,11 @@ p {
   background-color: red;
   border: none;
 }
+.ft_btn {
+  background-color: orangered;
+  width: 60px;
+}
+.map_container {
+  height: 100%;
+  width: 100%;
+}

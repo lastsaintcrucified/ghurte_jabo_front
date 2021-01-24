@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import BackDrop from "../backDrop/backDrop.component.jsx";
+import BackDrop from "../../uiElements/backDrop.component.jsx";
 import MainHeader from "../mainHeader/mainHeader.component.jsx";
 import NavLinks from "../navLinks/navLinks.component.jsx";
 import SideDrawer from "../sideDrawer/sideDrawer.component.jsx";

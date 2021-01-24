@@ -13,10 +13,7 @@ const UserPlace = () =>{
            address:"bandarban sajek chittagong",
            image:"https://lh5.googleusercontent.com/p/AF1QipMTZWalB_R23PxKdMsYaxHW7uyvmS137XzSBGkU=w408-h271-k-no",
            description:"This is one of the best hilltracks in Bangladesh, that is being visited by tourists",
-           co_ordinantes:{
-               lat:23.3819926,
-               lang:92.2938229
-           },
+           co_ordinantes:[23.3819926,92.2938229],
            creator:"u1"
         },
         {
@@ -25,10 +22,7 @@ const UserPlace = () =>{
             address:"bandarban sajek chittagong",
             image:"https://lh5.googleusercontent.com/p/AF1QipMTZWalB_R23PxKdMsYaxHW7uyvmS137XzSBGkU=w408-h271-k-no",
             description:"This is one of the best hilltracks in Bangladesh, that is being visited by tourists",
-            co_ordinantes:{
-                lat:23.3819926,
-                lang:92.2938229
-            },
+            co_ordinantes:[23.3819926,92.2938229],
             creator:"u2"
          }
     ]

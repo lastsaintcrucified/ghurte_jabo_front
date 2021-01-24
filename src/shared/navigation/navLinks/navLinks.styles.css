@@ -23,6 +23,6 @@
 }
 .nav_link a:hover,
 .nav_link a.active {
-  background-color: black;
+  background-color: #118980;
   color: white;
 }
