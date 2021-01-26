@@ -38,9 +38,12 @@ form {
   bottom: 10px;
   left: 25vw;
 }
+.footer_delete {
+  left: 20vw;
+}
 @media screen and (max-width: 500px) {
   .modal_footer {
-    left: 20vw;
+    left: 18vw;
   }
   .modal_header h2 {
     font-size: 1.2em;
