@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Avatar from "../../../shared/uiElements/avatar.component.jsx";
 import CustomButton from "../../../shared/uiElements/customButton.component.jsx";
 import Modal from "../../../shared/uiElements/modal.component.jsx";
 import Map from "../../../shared/uiElements/map.component.jsx";
-
+import { AuthContext } from "../../../shared/context/auth-context.js";
 import "./placeItem.styles.css";
 
 const PlaceItem = (props) => {
+  const auth = useContext(AuthContext);
   const [showMap, setSHowMap] = useState(false);
   const [showDelete, setShowDelete] = useState(false);
 
@@ -82,12 +83,16 @@ const PlaceItem = (props) => {
         </div>
         <div className="place_item_button">
           <CustomButton onClick={openMapModal}>View On Map</CustomButton>
-          <CustomButton to={`/places/${props.id}`} className="edit">
-            Edit
-          </CustomButton>
-          <CustomButton onClick={openDeleteModal} className="delete">
-            Delete
-          </CustomButton>
+          {auth.isLoggedIn && (
+            <CustomButton to={`/places/${props.id}`} className="edit">
+              Edit
+            </CustomButton>
+          )}
+          {auth.isLoggedIn && (
+            <CustomButton onClick={openDeleteModal} className="delete">
+              Delete
+            </CustomButton>
+          )}
         </div>
       </div>
     </React.Fragment>
