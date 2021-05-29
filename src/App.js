@@ -50,6 +50,7 @@ function App() {
         <Auth />
       </Route>
       <Redirect to="/auth" />
+
     </Switch>
   );
   let routes = isLoggedIn ? route1 : route2;
