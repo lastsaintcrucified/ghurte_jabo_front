@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-
+const mongoose = require("mongoose");
 const userRoutes = require("./routes/user-routes");
 const placesRoutes = require("./routes/places-routes");
 const usersRoutes = require("./routes/user-routes");
@@ -26,5 +26,13 @@ app.use((error, req, res, next) => {
     .status(error.code || 500)
     .json({ message: error.message || "An unknown error occured!" });
 });
-
-app.listen(5000);
+mongoose
+  .connect(
+    "mongodb+srv://towhid313:ib1eWrpeaWxIHzza@cluster0.sspie.mongodb.net/ghurte_jabo?retryWrites=true&w=majority"
+  )
+  .then(() => {
+    app.listen(5000);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
