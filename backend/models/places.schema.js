@@ -7,7 +7,7 @@ const placeSchema = new Schema({
   address: { type: String, required: true },
   image: { type: String, required: true },
   description: { type: String, required: true },
-  co_ordinantes: { type: Array, required: true },
+  co_ordinantes: [Number],
   creator: { type: String, required: true },
 });
 

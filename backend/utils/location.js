@@ -17,7 +17,8 @@ const getCoOrdForAddress = async (address) => {
       422
     );
   }
-  const co_ordinates = data.features[0].geometry.coordinates;
+  const co_ordinates = [...data.features[0].geometry.coordinates];
+  console.log(co_ordinates);
   return co_ordinates;
 };
 
