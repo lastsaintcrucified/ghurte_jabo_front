@@ -59,7 +59,9 @@ const createPlace = async (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     console.log(errors);
-    next(new httpError("Invalid data passed,please check the inputs", 422));
+    return next(
+      new httpError("Invalid data passed,please check the inputs", 422)
+    );
   }
   let co_ordinates;
   try {
@@ -93,7 +95,9 @@ const updatePlace = async (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     console.log(errors);
-    throw new httpError("Invalid data passed,please check the inputs", 422);
+    return next(
+      new httpError("Invalid data passed,please check the inputs", 422)
+    );
   }
   const placeId = req.params.pid;
   let place;
