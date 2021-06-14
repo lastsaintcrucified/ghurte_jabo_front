@@ -27,9 +27,28 @@ const Auth = () => {
     },
     false
   );
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
-    console.log(state);
+    if (loginMode) {
+    } else {
+      try {
+        const response = await fetch("http://localhost:5000/api/users/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: state.inputs.name.value,
+            email: state.inputs.email.value,
+            password: state.inputs.password.value,
+          }),
+        });
+        const data = await response.json();
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
     auth.login();
   };
   const switchModeToggle = (event) => {
