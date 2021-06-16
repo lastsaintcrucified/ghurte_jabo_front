@@ -1,6 +1,7 @@
 .user_item {
   padding: 10px;
   border-radius: 4px;
+  margin-top: 50px;
   box-shadow: 10px 10px 5px grey;
 }
 .user_item_info {
